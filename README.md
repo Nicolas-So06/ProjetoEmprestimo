@@ -23,6 +23,28 @@ O objetivo deste projeto é fornecer uma solução simples e eficiente para rast
 
 ## Como Executar o Projeto
 
-Repositório:
+1. Clone o repositório:
    ```bash
-     https://github.com/Nicolas-So06/ProjetoEmprestimo.git
+   git clone https://github.com/Nicolas-So06/ProjetoEmprestimo.git
+   python -m venv venv
+   ```
+2. Crie e ative um ambiente virtual:
+   ```bash
+    source venv/bin/activate  # No Linux/macOS
+    # .\venv\Scripts\activate    # No Windows PowerShell
+   
+3. Instale as dependências:
+
+    ```bash
+    pip install -r requirements.txt
+   
+4. Configure as variáveis de ambiente no arquivo .env.
+5. Aplique as migrações do banco de dados:
+
+    ```bash
+    alembic upgrade head
+   
+6. Inicie o servidor:
+
+    ```bash
+    uvicorn app.main:app --reload
