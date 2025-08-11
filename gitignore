@@ -1,5 +1,7 @@
 venv/
 .venv/
+
+git
 env/
 .env
 
